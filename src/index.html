@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>To-Do App</h1>
+    </div>
+  </header>
+  <div class="container navigation">
+    <button id="all-projects">All projects</button>
+  </div>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Due date</th>
+          <th>Priority</th>
+          <th>Project</th>
+        </tr>
+      </thead>
+      <tbody id="content">
+
+      </tbody>
+    </table>
+    <form id="task-form">
+      <input type="text" id="title" name="title">
+      <input type="text" id="description" name="description">
+      <input type="text" id="duedate" name="duedate">
+      <input type="text" id="priority" name="prority">
+      <input type="text" id="project" name="project">
+      <input type="button" id="submit-task" name="button" value="Click">
+    </form>
+  </div>
+  <script src="index.bundle.js"></script>
+</body>
+
+</html>
